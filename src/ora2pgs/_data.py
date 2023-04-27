@@ -15,7 +15,7 @@
 import datetime
 import cx_Oracle
 
-import ora2pgs as o2p
+from ora2pgs import o2p
 
 # -----------------------------------------------
 

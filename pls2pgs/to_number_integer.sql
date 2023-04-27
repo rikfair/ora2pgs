@@ -1,0 +1,10 @@
+CREATE OR REPLACE FUNCTION %%schema%%.to_number(a INTEGER)
+RETURNS INTEGER
+LANGUAGE plpgsql
+AS
+$$
+BEGIN
+  RETURN a;
+END;
+$$
+;

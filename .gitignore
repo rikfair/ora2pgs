@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+
+dist/
+
+docs/_build
+docs/_templates
+docs/make.bat
+docs/Makefile
+
+__*__
+
+*.egg-info
+
+.pypirc

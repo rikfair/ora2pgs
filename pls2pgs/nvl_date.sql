@@ -1,0 +1,11 @@
+
+CREATE FUNCTION %%schema%%.nvl(a DATE, b DATE)
+RETURNS DATE
+LANGUAGE plpgsql
+AS
+$$
+BEGIN
+  RETURN COALESCE(a, b);
+END;
+$$
+;

@@ -1,0 +1,11 @@
+
+CREATE FUNCTION %%schema%%.nvl(a NUMERIC, b NUMERIC)
+RETURNS NUMERIC
+LANGUAGE plpgsql
+AS
+$$
+BEGIN
+  RETURN COALESCE(a, b);
+END;
+$$
+;

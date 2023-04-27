@@ -1,16 +1,5 @@
-#!/usr/bin/python3
-# -----------------------------------------------
 """
-    DESCRIPTION:
-        Functions for using dates stored as int
-
-    ASSUMPTIONS:
-        The tools module assumes dates are valid and are of the expected type.
-        See the core module for the more resilient class
-
-    LIMITATIONS:
-        Uses the Gregorian calendar and makes no adjustment for the Julian calendar changeover.
-        Therefore only use dates from 1583.
+The extract transform load manager module for migrating an oracle schema to postgresql
 """
 # -----------------------------------------------
 
@@ -22,7 +11,7 @@ import os
 import cx_Oracle
 import psycopg2
 
-import ora2pgs as o2p
+from ora2pgs import o2p
 import ora2pgs._data as data
 import ora2pgs._foreign_keys as foreign_keys
 import ora2pgs._indexes as indexes
@@ -427,8 +416,8 @@ class BASE:
 # -----------------------------------------------
 
 
-class ETL(BASE):
-    """ todo """
+class MANAGER(BASE):
+    """ The manager class, including all base modules and the run option, do_etl """
 
     def do_etl(self):
         """ todo """
